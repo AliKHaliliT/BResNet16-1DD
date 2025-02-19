@@ -43,7 +43,7 @@ The codebase is fully integratable inside the TensorFlow and Keras code pipeline
 - **ResNet-B Inspired Strides:** Moved the stride placement in the residual blocks from the first convolution to the second.
 - **ResNet-D Inspired Shortcut:** Introduces an average pooling layer before the 1x1 convolution in the shortcut connection.
 - **Reduced Downsampling:** Downsampling is now performed only twice (in the stem block) instead of the original five times.
-- **Modified Channel Count:** The number of channels has been adjusted to better accommodate 1D time-series data while maintaining a compact model size. Specifically, the filter count in the first two layers in the main path is reduced by a factor of 4, creating a squeeze-and-expansion effect. The final output channel count remains scaled by a factor of 4.
+- **Modified Channel Count:** The number of channels has been adjusted to better maintain a compact model size. Specifically, the filter count in the first two layers in the main path is reduced by a factor of 4, creating a squeeze-and-expansion effect (the final output channel count remains scaled by a factor of 4).
 
 <br/>
 <br/>
